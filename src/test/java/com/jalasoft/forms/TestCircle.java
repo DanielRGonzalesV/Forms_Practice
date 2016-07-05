@@ -1,17 +1,16 @@
-package com.jalasoft.forms;
+package com.jalasoft.forms
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.Before
+import org.junit.Test
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertEquals
 
-/**
- * Created by danielgonzales on 6/16/2016.
- */
-public class TestCircle {
 
-    static final double radio = 2.3;
-    static private Circle circle;
+class CircleTest {
+
+    private final double radio = 2.3;
+
+    private Circle circle;
 
     @Before
     public void init() {
@@ -20,19 +19,13 @@ public class TestCircle {
 
     @Test
     public void TestCalculateCirclePerimeter() {
-
-        final double expectedPerimeter = 14.443999999999999;
-
-        assertEquals(expectedPerimeter, circle.calPerimeter(), Constant.delta);
-
+        final double expectedPerimeter = 14.451326206513047;
+        assertEquals(expectedPerimeter, circle.calPerimeter(), Constant.DELTA);
     }
 
     @Test
     public void TestCalculateCircleArea() {
-
-        final double expectedArea = 16.610599999999998;
-
-        assertEquals(expectedArea, circle.calArea(), Constant.delta);
-
+        final double expectedArea = 16.619025137490002;
+        assertEquals(expectedArea, circle.calArea(), Constant.DELTA);
     }
 }

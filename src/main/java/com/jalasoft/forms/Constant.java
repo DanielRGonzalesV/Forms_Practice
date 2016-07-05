@@ -1,14 +1,9 @@
 package com.jalasoft.forms;
 
-/**
- * Created by danielgonzales on 6/16/2016.
- */
 public class Constant {
 
-    public final static int delta = 0;
+    public final static double DELTA = 0;
 
-    private Constant() {
-
-    }
+    public final static int FACTOR_FORMULA = 2;
 
 }

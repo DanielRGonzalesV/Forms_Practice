@@ -1,30 +1,18 @@
 package com.jalasoft.forms;
 
-/**
- * Created by danielgonzales on 6/16/2016.
- */
 public class Circle extends Forms {
 
-    private double radio;
-    private static final double PI = 3.14;
+    private final double radio;
 
-    public Circle(double radio){
-        super();
+    public Circle(double radio) {
         this.radio = radio;
     }
 
     public double calPerimeter() {
-
-        double perimeter = 2*PI*radio;
-
-        return perimeter;
+        return (Math.PI + Math.PI) * radio;
     }
 
     public double calArea() {
-
-        double area = PI*radio*radio;
-
-        return area;
-
+        return Math.PI * radio * radio;
     }
 }

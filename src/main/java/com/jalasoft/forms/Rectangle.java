@@ -1,31 +1,22 @@
 package com.jalasoft.forms;
 
-/**
- * Created by danielgonzales on 6/16/2016.
- */
-public class Rectangle extends Forms{
 
-    private double lado1;
-    private double lado2;
+public class Rectangle extends Forms {
 
-    public Rectangle(double lado1, double lado2){
-        super();
-        this.lado1 = lado1;
-        this.lado2 = lado2;
+    private final double side1;
+
+    private final double side2;
+
+    public Rectangle(double side1, double side2) {
+        this.side1 = side1;
+        this.side2 = side2;
     }
 
     public double calPerimeter() {
-
-        double perimeter = lado1*2*lado2*2;
-
-        return perimeter;
+        return Constant.FACTOR_FORMULA * (side1 + side2);
     }
 
     public double calArea() {
-
-        double area = lado1*lado2;
-
-        return area;
-
+        return side1 * side2;
     }
 }
